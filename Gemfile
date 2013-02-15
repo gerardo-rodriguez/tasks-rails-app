@@ -30,6 +30,7 @@ group :development, :test do
   gem 'growl_notify'
   gem 'rb-fsevent', '~> 0.9.1'
   gem 'minitest'
+  gem 'launchy'
 end
 
 # To use ActiveModel has_secure_password
