@@ -31,15 +31,13 @@ GEM
     addressable (2.3.2)
     arel (3.0.2)
     builder (3.0.4)
-    capybara (2.0.2)
-      mime-types (>= 1.16)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      selenium-webdriver (~> 2.0)
-      xpath (~> 1.0.0)
-    childprocess (0.3.8)
-      ffi (~> 1.0, >= 1.0.11)
+      xpath (>= 2.0, < 4.0)
     coderay (1.0.8)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -52,7 +50,6 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    ffi (1.3.1)
     growl_notify (0.0.3)
       rb-appscript
     guard (1.6.2)
@@ -80,21 +77,24 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     method_source (0.8.1)
-    mime-types (1.21)
+    mime-types (1.25.1)
+    mini_mime (1.0.0)
+    mini_portile2 (2.3.0)
     minitest (4.6.0)
-    multi_json (1.6.1)
-    nokogiri (1.5.6)
+    multi_json (1.13.1)
+    nokogiri (1.8.3)
+      mini_portile2 (~> 2.3.0)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
-    rack (1.4.5)
+    rack (1.4.7)
     rack-cache (1.2)
       rack (>= 0.4)
     rack-ssl (1.3.3)
       rack
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
     rails (3.2.11)
       actionmailer (= 3.2.11)
@@ -131,17 +131,11 @@ GEM
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
       rspec-mocks (~> 2.12.0)
-    rubyzip (0.9.9)
     sass (3.2.5)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    selenium-webdriver (2.29.0)
-      childprocess (>= 0.2.5)
-      multi_json (~> 1.0)
-      rubyzip
-      websocket (~> 1.0.4)
     slop (3.4.3)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -159,15 +153,14 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    websocket (1.0.7)
-    xpath (1.0.0)
-      nokogiri (~> 1.3)
+    xpath (3.1.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara
+  capybara (>= 2.0.2)
   coffee-rails (~> 3.2.1)
   growl_notify
   guard-rspec
@@ -180,3 +173,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
+
+BUNDLED WITH
+   1.16.1
