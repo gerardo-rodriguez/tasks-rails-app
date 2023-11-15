@@ -25,7 +25,7 @@ gem 'jquery-rails'
 group :development, :test do
   # gem 'turn'
   gem 'rspec-rails'
-  gem 'capybara'
+  gem 'capybara', '>= 2.0.3'
   gem 'guard-rspec'
   gem 'growl_notify'
   gem 'rb-fsevent', '~> 0.9.1'
