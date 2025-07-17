@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '7.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,7 +12,7 @@ gem 'sqlite3'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'coffee-rails', '~> 4.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -20,12 +20,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 group :development, :test do
   # gem 'turn'
-  gem 'rspec-rails'
-  gem 'capybara'
+  gem 'rspec-rails', '>= 2.13.0'
+  gem 'capybara', '>= 2.0.3'
   gem 'guard-rspec'
   gem 'growl_notify'
   gem 'rb-fsevent', '~> 0.9.1'
